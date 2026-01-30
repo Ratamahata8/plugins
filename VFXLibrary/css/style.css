@@ -1,0 +1,112 @@
+:root {
+  --bg: #1e1e1e;
+  --panel: #2a2a2a;
+  --accent: #5cc8ff;
+  --text: #f2f2f2;
+  --muted: #9a9a9a;
+  --danger: #ff5c5c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#app {
+  padding: 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin: 4px 0 12px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.controls input,
+.controls select {
+  background: var(--panel);
+  border: 1px solid #3a3a3a;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.error {
+  background: rgba(255, 92, 92, 0.2);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--panel);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+  transition: transform 0.15s ease, border 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+  background: #111;
+}
+
+.card .info {
+  padding: 8px;
+}
+
+.card .title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card .category {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.card .mode {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--accent);
+}
