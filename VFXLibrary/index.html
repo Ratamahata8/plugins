@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VFX Library</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>VFX Library</h1>
+        <p class="subtitle">Motion Bro–style one-click VFX packs for After Effects.</p>
+      </header>
+
+      <section class="controls">
+        <input id="searchInput" type="text" placeholder="Search effects..." />
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="explosions">Explosions</option>
+          <option value="fire">Fire & Smoke</option>
+          <option value="water">Water & Splashes</option>
+          <option value="snow">Snow & Weather</option>
+          <option value="electricity">Electricity & Energy</option>
+          <option value="magic">Magic & Fantasy</option>
+          <option value="particles">Particles</option>
+          <option value="light">Light / Glow</option>
+          <option value="glitch">Glitch / Digital</option>
+          <option value="abstract">Abstract Shapes</option>
+          <option value="hud">Game UI / HUD</option>
+        </select>
+      </section>
+
+      <div id="errorBanner" class="error hidden"></div>
+
+      <section id="grid" class="grid"></section>
+    </div>
+
+    <script src="lib/CSInterface.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/Vulcan.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
