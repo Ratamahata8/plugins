@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VFX from codex</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="panel-header">
+    <div class="brand">
+      <span class="brand-title">VFX from codex</span>
+      <span class="brand-subtitle">Motion Bro–style VFX Library</span>
+    </div>
+  </header>
+
+  <section class="toolbar">
+    <input id="searchInput" type="search" placeholder="Search effects" />
+    <select id="categoryFilter">
+      <option value="all">All categories</option>
+      <option value="Explosions">Explosions</option>
+      <option value="Fire / Smoke">Fire / smoke</option>
+      <option value="Water / Splashes">Water / splashes</option>
+      <option value="Snow / Weather">Snow / weather</option>
+      <option value="Electricity / Energy">Electricity / energy</option>
+      <option value="Magic / Fantasy">Magic / fantasy</option>
+      <option value="Particles">Particles (generic)</option>
+      <option value="Light / Glow">Light / glow effects</option>
+      <option value="Glitch / Digital">Glitch / digital FX</option>
+      <option value="Abstract Shapes">Abstract shape-based FX</option>
+      <option value="UI / HUD">UI / HUD / game-style FX</option>
+    </select>
+  </section>
+
+  <section class="status" id="statusMessage" aria-live="polite"></section>
+
+  <section class="grid" id="effectsGrid" aria-label="Effect library"></section>
+
+  <script src="js/CSInterface.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
