@@ -1,6 +1,6 @@
 /*
   VFXLibrary ExtendScript host
-  - Receives JSON payload from panel.js
+  - Receives JSON payload from main.js
   - Creates a precomp with shape layers / native effects / particles
   - Inserts precomp into the active comp, centers it, and auto-fits scale
 */
